@@ -1,0 +1,87 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+    transition: 0.5s;
+}
+
+.cell:hover, .on {
+    transform: scale(1.05);
+}
+
+.cell:active {
+    transition: 0.25s;
+}
+
+.cell:nth-child(1) {
+    background-color: #f368e0;
+}
+
+.cell:nth-child(1):active {
+    background-color: #ff9ff3;
+}
+
+.cell:nth-child(2) {
+    background-color: #ff9f43;
+}
+
+.cell:nth-child(2):active {
+    background-color: #feca57;
+}
+
+.cell:nth-child(3) {
+    background-color: #0abde3;
+}
+
+.cell:nth-child(3):active {
+    background-color: #48dbfb;
+}
+
+.cell:nth-child(4) {
+    background-color: #ee5253;
+}
+
+.cell:nth-child(4):active {
+    background-color: #ff6b6b;
+}
+
+button {
+    background-color: #222f3e;
+    color: #fff;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #1dd1a1;
+}
